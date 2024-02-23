@@ -14,7 +14,7 @@ package difficultyeasy
 // Output: false
 
 // Answer :
-func isPowerOfTwo(n int) bool {
+func IsPowerOfTwo(n int) bool {
     pow := 1
     for pow < n {
         pow *= 2

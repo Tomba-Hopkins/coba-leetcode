@@ -14,7 +14,7 @@ package difficultyeasy
 
 // Answer :
 
-func twoSum(nums []int, target int) []int {
+func TwoSum(nums []int, target int) []int {
 	result := []int{}
 	for i := 0; i < len(nums); i++{ // ini iterasi lagi kalau j udah mentok ampe nums.length
 		for j := i + 1; j < len(nums); j++{

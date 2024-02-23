@@ -15,7 +15,7 @@ package difficultyeasy
 // Explanation: M = 1000, CM = 900, XC = 90 and IV = 4.
 
 // Answer :
-func romanToInt(s string) int {
+func RomanToInt(s string) int {
 	roman := map[byte]int{
 		'I': 1,
 		'V': 5,

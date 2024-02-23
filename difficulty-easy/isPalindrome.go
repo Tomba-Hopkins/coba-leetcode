@@ -15,7 +15,7 @@ package difficultyeasy
 // Explanation: Reads 01 from right to left. Therefore it is not a palindrome.
 
 // Answer :
-func isPalindrome(x int) bool {
+func IsPalindrome(x int) bool {
 
 	if x < 10 && x >= 0 {
 		return true
