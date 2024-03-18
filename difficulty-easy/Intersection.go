@@ -13,7 +13,7 @@ package difficultyeasy
 // Answer :
 
 
-func intersection(nums1 []int, nums2 []int) []int {
+func Intersection(nums1 []int, nums2 []int) []int {
 
 	table := map[int]bool{}
 
