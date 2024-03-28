@@ -15,7 +15,7 @@ package difficultyeasy
 // Output: []
 
 // Answer :
-func findDuplicates(nums []int) []int {
+func FindDuplicates(nums []int) []int {
 
 	res := []int{}
 	kotak := map[int]int{}
