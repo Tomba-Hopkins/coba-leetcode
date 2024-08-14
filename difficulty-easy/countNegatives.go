@@ -18,7 +18,6 @@ package difficultyeasy
 // Follow up: Could you find an O(n + m) solution?
 
 // Answer :
-
 func CountNegatives(grid [][]int) (r int) {
 	for i := 0; i < len(grid); i++ {
 		for j := 0; j < len(grid[i]); j++ {
