@@ -1,4 +1,4 @@
-package difficultyeasy
+package usingimportpackage
 
 import "sort"
 
