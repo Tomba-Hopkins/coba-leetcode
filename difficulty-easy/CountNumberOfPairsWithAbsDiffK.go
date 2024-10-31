@@ -31,7 +31,7 @@ package difficultyeasy
 // 1 <= k <= 99
 
 // Answer :
-func CountKDifference(nums []int, k int) (r int) {
+func CountNumberOfPairsWithAbsDiffK(nums []int, k int) (r int) {
     for i := 0; i < len(nums); i++{
         for j := 0; j < len(nums); j++{
             if nums[i] - nums[j] == k {
