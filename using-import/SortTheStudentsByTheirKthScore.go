@@ -1,4 +1,4 @@
-package difficultymedium
+package usingimportpackage
 
 import "sort"
 
