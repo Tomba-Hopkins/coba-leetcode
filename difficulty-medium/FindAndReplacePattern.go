@@ -54,3 +54,53 @@ func FindAndReplacePattern(words []string, pattern string) (r []string) {
 	}
 	return
 }
+
+
+
+
+// sec ans sangat benar
+// func FindAndReplacePattern(words []string, pattern string) (r []string) {
+// 	if len(words) == 1 {
+// 		return []string{}
+// 	}
+// 	m := map[string]bool{}
+// 	root := ""
+// 	for _,  s := range pattern {
+// 		if !m[string(s)] {
+// 			root += string(s)
+// 			m[string(s)] = true
+// 		}
+// 	}
+// 	m2 := map[string]int{}
+// 	for i,x := range root {
+// 		m2[string(x)] = i
+// 	}
+// 	code := ""
+// 	for _, x := range pattern {
+// 		s := strconv.Itoa(m2[string(x)])
+// 		code += s
+// 	}
+// 	for i := 0; i < len(words); i++{
+// 		v := map[string]bool{}
+// 		root2 := ""
+// 		for _,  s := range words[i] {
+// 			if !v[string(s)] {
+// 				root2 += string(s)
+// 				v[string(s)] = true
+// 			}
+// 		}
+// 		v2 := map[string]int{}
+// 		for i,x := range root2 {
+// 			v2[string(x)] = i
+// 		}
+// 		code2 := ""
+// 		for _, x := range words[i] {
+// 			s := strconv.Itoa(v2[string(x)])
+// 			code2 += s
+// 		}
+// 		if code == code2 {
+// 			r = append(r, words[i])
+// 		}
+// 	}
+// 	return
+// }
