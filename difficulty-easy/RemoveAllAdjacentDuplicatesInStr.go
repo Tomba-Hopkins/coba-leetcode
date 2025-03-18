@@ -28,3 +28,17 @@ func RemoveAllAdjacentDuplicatesInStr(s string) (r string) {
 	}
 	return
 }
+
+
+// lebih hemat
+// func RemoveAllAdjacentDuplicatesInStr(s string) string {
+//     var r []rune
+// 	for _, x := range s {
+//         if len(r) > 0 && r[len(r) - 1] == x {
+//             r = r[:len(r) - 1]
+//         } else {
+//             r = append(r, x)
+//         }
+//     }
+// 	return string(r)
+// }
