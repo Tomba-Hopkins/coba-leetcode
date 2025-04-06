@@ -18,7 +18,7 @@ package difficultyeasy
 // s consist of lowercase English letters and '?'.
 
 // Answer :
-func ModifyString(s string) (r string) {
+func ReplaceAllTandaTanya(s string) (r string) {
 	x := "abcdefghijklmnopqrstuvwxyz"
 	for i := 0; i < len(s); i++ {
 		if s[i] == '?' {
@@ -37,7 +37,7 @@ func ModifyString(s string) (r string) {
 	return
 }
 
-// func ModifyString(s string) (r string) {
+// func ReplaceAllTandaTanya(s string) (r string) {
 // 	x := "abcdefghijklmnopqrstuvwxyz"
 // 	for i := 0; i < len(s); i++{
 // 		if s[i] == '?'{
