@@ -77,3 +77,44 @@ func CountGoodTriplets(arr []int, a int, b int, c int) (r int) {
 	}
 	return
 }
+
+
+
+
+// sec ans:
+// func CountGoodTriplets(arr []int, a int, b int, c int) (r int) {
+// 	for i := 0; i < len(arr) - 2; i++{
+// 		x, y, z := false, false, false
+// 		for j := i + 1; j < len(arr) - 1; j++{
+// 			if abs(arr[i] - arr[j]) <= a {
+// 				x = true
+// 			} else {
+// 				x = false
+// 			}
+// 			for k := j + 1; k < len(arr); k++{
+// 				if abs(arr[j] - arr[k]) <= b {
+// 					y = true
+// 				} else {
+// 					y = false
+// 				}
+// 				if abs(arr[i] - arr[k]) <= c {
+// 					z = true
+// 				} else {
+// 					z = false
+// 				}
+				
+// 				if x && y && z {
+// 					r++
+// 					z = false
+// 				}
+// 			}
+// 		}
+// 	}
+// 	return
+// }
+// func abs(num int) int{
+// 	if num > 0 {
+// 		return num
+// 	}
+// 	return -num
+// }
