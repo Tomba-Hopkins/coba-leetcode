@@ -26,7 +26,7 @@ package difficultyeasy
 
 // Answer :
 func MostVisitedSectorInCircularTrack(n int, rounds []int) (r []int) {
-	high, low, m := n, n,  map[int]int{}
+	high, low, m := n, n, map[int]int{}
 	for _, v := range rounds {
 		if v > high {
 			high = v
@@ -35,50 +35,38 @@ func MostVisitedSectorInCircularTrack(n int, rounds []int) (r []int) {
 			low = v
 		}
 	}
-	for i := 0; i < len(rounds) - 1; i++{
-		x, y := rounds[i], rounds[i + 1]
+	for i := 0; i < len(rounds)-1; i++ {
+		x, y := rounds[i], rounds[i+1]
 		con := true
 		if x >= y && y < n {
 			con = false
 		}
+		if i != 0 {
+			x++
+		}
 		if con {
-			if i == 0 {
-				for j := x; j <= y; j++{
-					m[j]++
-				}
-			} else {
-				for j := x + 1; j <= y; j++{
-					m[j]++
-				}
+			for j := x; j <= y; j++ {
+				m[j]++
 			}
 		} else {
 			if 1 < low {
 				low = 1
 			}
-			if i == 0 {
-				for j := x; j <= n; j++{
-					m[j]++
-				}
-				for j := 1; j <= y; j++{
-					m[j]++
-				}
-			} else {
-				for j := x + 1; j <= n; j++{
-					m[j]++
-				}
-				for j := 1; j <= y; j++{
-					m[j]++
-				}
+			for j := x; j <= n; j++ {
+				m[j]++
 			}
-		}	
+			for j := 1; j <= y; j++ {
+				m[j]++
+			}
+		}
 	}
 	d := 0
-	for i := low; i <= high; i++{
+	for i := low; i <= high; i++ {
 		if m[i] > d {
 			d = m[i]
 		}
 	}
-	for i := low; i <= high; i++{
+	for i := low; i <= high; i++ {
 		if m[i] == d {
 			r = append(r, i)
 		}
