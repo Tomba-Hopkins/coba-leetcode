@@ -1,0 +1,6 @@
+Linked list :
+- aku mulai mencoba ini, hal baru buatku jadi belum terbiasa dengan struct dan pointer
+- dia pake node, dan ga pake index jadi ga sama kayak array, ini posisi node
+- ciri: pakai struct, pakai pointer next, gada index, traversal 1 arah
+- contoh kategori soal lain: tree (binary tree, binary search tree), graph, stack / queue
+- contoh rute yg kira2 gampang: linkedlist, stack, binary tree, graph
