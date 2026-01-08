@@ -55,9 +55,9 @@ func printLis(head *ListNode) {
 	fmt.Println()
 }
 
-func main() {
-	h := bikinListNode([]int{1, 2, 3, 4, 5})
-	printLis(h)
-	mid := MiddleOfTheLinkedList(h)
-	printLis(mid)
-}
+// func main() {
+// 	h := bikinListNode([]int{1, 2, 3, 4, 5})
+// 	printLis(h)
+// 	mid := MiddleOfTheLinkedList(h)
+// 	printLis(mid)
+// }
