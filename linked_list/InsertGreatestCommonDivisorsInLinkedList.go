@@ -24,6 +24,21 @@ package linkedlist
 // 1 <= Node.val <= 1000
 
 // Answer :
+
+// pseudocode from gpt
+// curr = head
+// while curr != null AND curr.next != null:
+//     g = gcd(curr.val, curr.next.val)
+//     newNode = Node(g)
+//     newNode.next = curr.next
+//     curr.next = newNode
+//     curr = newNode.next
+// 2.
+// function gcd(a, b):
+//     while b != 0:
+//         a, b = b, a % b
+//     return a
+
 import "fmt"
 
 type ListNode2 struct {
@@ -71,10 +86,8 @@ func printDong(head *ListNode2) {
 	fmt.Println()
 }
 
-func main() {
-
-	a := []int{18, 6, 10, 3}
-	n := buatinNode1(a)
-	printDong(InsertGreatestCommonDivisorsInLinkedList(n))
-
-}
+// func main() {
+// 	a := []int{18, 6, 10, 3}
+// 	n := buatinNode1(a)
+// 	printDong(InsertGreatestCommonDivisorsInLinkedList(n))
+// }
