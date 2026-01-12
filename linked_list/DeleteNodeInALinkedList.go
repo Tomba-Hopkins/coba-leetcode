@@ -69,10 +69,10 @@ func printCobaYaelah(h *ListNode) {
 	fmt.Println()
 }
 
-func main() {
+// func main() {
 
-	a := []int{4, 5, 1, 9}
-	node := buatinNodeYaelah(a)
-	DeleteNodeInALinkedList(node)
+// 	a := []int{4, 5, 1, 9}
+// 	node := buatinNodeYaelah(a)
+// 	DeleteNodeInALinkedList(node)
 
-}
+// }
